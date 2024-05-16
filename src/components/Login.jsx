@@ -1,5 +1,6 @@
-import { Button, Container, Heading, Input, VStack ,Link,Text} from '@chakra-ui/react'
+import { Button, Container, Heading, Input, VStack ,Text} from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return <Container maxW={"container.xl"} h={"100vh"} p={"16"}>
@@ -14,7 +15,7 @@ const Login = () => {
             <Button colorScheme='purple' type='submit'>Log In</Button>
             <Text textAlign={"right"}>New User ?{" "}
             <Button variant={"link"} colorScheme='purple'>
-                <Link href={"/signup"}> Sign Up</Link>
+                <Link to="/signup"> Sign Up</Link>
             </Button>
             </Text>
         </VStack>

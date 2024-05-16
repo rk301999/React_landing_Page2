@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button, Container, Heading, Input, VStack ,Link,Text, Avatar, Center} from '@chakra-ui/react'
-import { NavLink } from 'react-router-dom'
+import { Button, Container, Heading, Input, VStack ,Text, Avatar, Center} from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 
 const SignUp = () => {
@@ -16,7 +16,7 @@ const SignUp = () => {
           <Button colorScheme='purple' type='submit'>Sign Up</Button>
           <Text textAlign={"right"}>Already a user?{" "}
           <Button variant={"link"} colorScheme='purple'>
-              <Link href="/login"> Log In</Link>
+              <Link to="/login"> Log In</Link>
               {/* <a href="/login">Log In</a> */}
           </Button>
           </Text>
